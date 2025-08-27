@@ -1,0 +1,108 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    color: #1e2a44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.invitation {
+    background: #fff;
+    border: 10px solid #1e2a44;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #1e2a44;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin: 20px 0 10px;
+    color: #1e2a44;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #1e2a44;
+}
+
+.highlight {
+    color: #c59d3c;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 1.4rem;
+    margin: 15px 0;
+    color: #c59d3c;
+}
+
+.date {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c59d3c;
+    margin-bottom: 20px;
+}
+
+.location {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer {
+    font-size: 0.9rem;
+    margin-top: 25px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .time,
+    .date {
+        font-size: 1.2rem;
+    }
+}
